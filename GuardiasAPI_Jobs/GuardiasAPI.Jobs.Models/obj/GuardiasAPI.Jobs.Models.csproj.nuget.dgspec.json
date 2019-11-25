@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs.csproj": {}
+    "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs.csproj": {
+    "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs.csproj",
-        "projectName": "GuardiasAPI_Jobs",
-        "projectPath": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs.csproj",
+        "projectUniqueName": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj",
+        "projectName": "GuardiasAPI.Jobs.Models",
+        "projectPath": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI_Jobs\\obj\\",
+        "outputPath": "C:\\Users\\pablo\\Programacion Proyectos\\ProyectoGuardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -22,14 +22,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -40,19 +40,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -70,16 +59,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[2.2.4, )"
             }
           },
           "imports": [
@@ -92,6 +71,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }

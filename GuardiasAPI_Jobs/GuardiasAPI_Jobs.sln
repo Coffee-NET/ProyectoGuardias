@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardiasAPI_Jobs", "GuardiasAPI_Jobs\GuardiasAPI_Jobs.csproj", "{08ADE421-DF59-48A3-B9CB-315327E91D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuardiasAPI_Jobs", "GuardiasAPI_Jobs\GuardiasAPI_Jobs.csproj", "{08ADE421-DF59-48A3-B9CB-315327E91D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardiasAPI.Jobs.Models", "GuardiasAPI.Jobs.Models\GuardiasAPI.Jobs.Models.csproj", "{5DCF6794-6A92-4341-A6F6-85F38DA05FDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{08ADE421-DF59-48A3-B9CB-315327E91D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08ADE421-DF59-48A3-B9CB-315327E91D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08ADE421-DF59-48A3-B9CB-315327E91D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCF6794-6A92-4341-A6F6-85F38DA05FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCF6794-6A92-4341-A6F6-85F38DA05FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCF6794-6A92-4341-A6F6-85F38DA05FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCF6794-6A92-4341-A6F6-85F38DA05FDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

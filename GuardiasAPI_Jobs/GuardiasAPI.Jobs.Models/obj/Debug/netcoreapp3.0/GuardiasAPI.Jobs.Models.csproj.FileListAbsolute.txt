@@ -1,0 +1,7 @@
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\bin\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.deps.json
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\bin\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.dll
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\obj\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.csprojAssemblyReference.cache
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\obj\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.AssemblyInfoInputs.cache
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\obj\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.AssemblyInfo.cs
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\bin\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.runtimeconfig.json
+C:\Users\pablo\Programacion Proyectos\ProyectoGuardias\ProyectoGuardias\GuardiasAPI_Jobs\GuardiasAPI.Jobs.Models\bin\Debug\netcoreapp3.0\GuardiasAPI.Jobs.Models.runtimeconfig.dev.json
