@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,13 +24,25 @@ namespace GuardiasAPI_Jobs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Obtenemos los datos correspondientes a la DB
+            string server = Environment.GetEnvironmentVariable("GUARDIASAPI_Server");
+            string database = Environment.GetEnvironmentVariable("GUARDIASAPI_Database");
+            string userName = Environment.GetEnvironmentVariable("GUARDIASAPI_User");
+            string password = Environment.GetEnvironmentVariable("GUARDIASAPI_Password");
+
+            //Creamos el connectionString
+            string connectionString = 
+                String.Format("Server={0};Database={1};User Id={2};Password={3};", server, database, userName, password);
+
+            //Asosciamos el connectionString al DbContext
+            services.AddDbContext<GuardiasAPI.Jobs.Models.Context.JobDbContext>(options => options.UseSqlServer(connectionString));
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -41,20 +54,11 @@ namespace GuardiasAPI_Jobs
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
         }
     }
 }

@@ -4720,6 +4720,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "GuardiasAPI.Jobs.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/GuardiasAPI.Jobs.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GuardiasAPI.Jobs.Models.dll": {}
+        }
       }
     }
   },
@@ -12926,10 +12941,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "GuardiasAPI.Jobs.Models/1.0.0": {
+      "type": "project",
+      "path": "../GuardiasAPI.Jobs.Models/GuardiasAPI.Jobs.Models.csproj",
+      "msbuildProject": "../GuardiasAPI.Jobs.Models/GuardiasAPI.Jobs.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "GuardiasAPI.Jobs.Models >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.0",
@@ -12969,7 +12990,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Proyecto Guardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj": {
+              "projectPath": "C:\\Proyecto Guardias\\ProyectoGuardias\\GuardiasAPI_Jobs\\GuardiasAPI.Jobs.Models\\GuardiasAPI.Jobs.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
