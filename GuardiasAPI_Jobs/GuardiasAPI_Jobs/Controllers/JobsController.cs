@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using GuardiasAPI.Jobs.Models.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GuardiasAPI_Jobs.Controllers
 {
@@ -52,14 +53,34 @@ namespace GuardiasAPI_Jobs.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void ModificarJob(int id, [FromBody] string value)
+        public ActionResult ModificarJob(int id, Job job)
         {
+            if (id != job.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(job).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return NoContent();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void BajaJob(int id)
+        public ActionResult<Job> BajaJob(int id)
         {
+            var job = _context.Jobs.Find(id);
+
+            if (job == null)
+            {
+                return NotFound();
+            }
+
+            _context.Jobs.Remove(job);
+            _context.SaveChanges();
+
+            return job;
         }
     }
 }
