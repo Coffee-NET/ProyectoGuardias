@@ -13,12 +13,16 @@ namespace GuardiasAPI_Jobs.Controllers
     [ApiController]
     public class JobsController : ControllerBase
     {
+        /** DEPENDENCY INJECTION **/
+
         private readonly JobDbContext _context;
 
         public JobsController(JobDbContext context)
         {
             _context = context;
         }
+
+        /** ******************** **/
 
         // GET api/values
         [HttpGet]
