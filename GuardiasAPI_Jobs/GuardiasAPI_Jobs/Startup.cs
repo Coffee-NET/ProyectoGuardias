@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GuardiasAPI_Jobs.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -44,6 +45,12 @@ namespace GuardiasAPI_Jobs
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+<<<<<<< HEAD
+=======
+            services.AddDbContext<GuardiasAPIDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conexion")));
+
+
+>>>>>>> ConexionEF
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
