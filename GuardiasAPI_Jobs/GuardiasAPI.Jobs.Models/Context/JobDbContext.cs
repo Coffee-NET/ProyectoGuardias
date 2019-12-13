@@ -11,6 +11,7 @@ namespace GuardiasAPI.Jobs.Models.Context
         {
         }
 
+        //Entidades
         public DbSet<Job> Jobs { get; set; }
     }
 }
